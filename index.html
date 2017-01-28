@@ -8,6 +8,7 @@
 <body>
                    <!-- Header -->
 <header class="main-header">
+  <div class="container">
 <nav class="main-navigation">
 <ul>
   <li><a href="#">Информация</a></li>
@@ -16,54 +17,65 @@
   <li><a href="#">Гостиницы</a></li>
   </ul>
   <div class="navigation-logo">
-      <img src="img/small-logo.png" width="138" height="70" alt="site-logo">
+      <img src="img/small-logo.png" width="145" height="70" alt="site-logo">
   </div>
  </nav>
+</div>
 </header>
                 <!-- Main content -->
-<main>
-<section class="main-logo">
+<main class="container">
+<div class="main-logo">
     <img src="img/slogan.jpg" width="1200" height="719" alt="Sedona">
-    <img src="img/bottom-line.png" alt="white" width="1200" height="57">
-</section>
-<section class="tagline">
+    <img src="img/bottom-line.png" class="top">
+</div>
+<div class="tagline">
   <h3>Седона - небольшой городок в Аризоне,заслуживающий большего!</h3>
   <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон.</p>
-</section>
-<section class="main-line-first">
-<div class="town">
+</div>
+<div class="main-line-first">
+<div class="town clearfix">
     <h3>Настоящий городок</h3>
     <span> - №1 - </span>
     <p>Седона - не аттракцион для туристов, там течет своя жизнь.</p>
 </div>
-    <img src="img/bg-1.jpg" alt="Photo Sedona" width="512" height="256">
-</section>
-<section class="main-line-second">
-<div class="recommend">
-    <img src="img/house.png" alt="photo house" width="75" height="72">
+<div class="town-image">
+    <img src="img/bg-1.jpg" alt="Photo Sedona" width="800" height="260">
+</div>
+</div>
+<div class="features-list clearfix">
+   <div class="features-list-item">
+     <div class="features-icon">
+      <img src="img/house.png" alt="photo house" width="75" height="72">
+      </div>
     <h3>Жилье</h3>
     <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-</div>
-<div class="recommend">
+   </div>
+<div class="features-list-item">
+  <div class="features-icon">
     <img src="img/burger.png" alt="photo food" width="75" height="72">
+  </div>
     <h3>Еда</h3>
     <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 </div>
-<div class="recommend">
+<div class="features-list-item">
+  <div class="features-icon">
    <img src="img/box.png" alt="photo souvenirs" width="75" height="72">
+ </div>
    <h3>Cувениры</h3>
    <p>Не только Китайского но и местного производства</p>
 </div>
-</section>
-<section class="main-line-third">
-    <img src="img/bg-2.jpg" alt="devil bridge photo" width="800" height="256">
-<div class="devil-bridge">
+</div>
+<div class="main-line-third">
+  <div class="town-image-two">
+    <img src="img/bg-2.jpg" alt="devil bridge photo" width="800" height="260">
+  </div>
+<div class="town-two">
     <h3>Там есть мост дьявола!</h3>
     <span> - №2 - </span>
     <p>Да, по нему можно пройтись! Если конечно вы осмелитесь.</p>
 </div>
-</section>
-<section class="main-line-fourth">
+</div>
+<div class="main-line-fourth ">
 <div class="advantages">
     <h3>Небольшая площадь</h3>
     <span>-№3-</span>
@@ -79,12 +91,14 @@
     <span>-№5-</span>
     <p>Большинство едет в Гранд Каньон и толпится там</p>
 </div>
-</section>
+</div>
 <section class="pre-form">
+<div class="promo">
   <h2>Заинтересовались?</h2>
   <p>Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+  <a href="#">Поиск гостиницы в Седоне</a>
+</div>
 <div class="form-search">
- <h3><a href="#">Поиск гостиницы в Седоне</a></h3>
  <form class="#" action="#" method="#">
  <div class="date-race">
   <label for="arriving">Дата заезда<span class="icon-calendar"><img src="img/calendar.png"></span></label>
@@ -114,6 +128,7 @@
 </main>
                        <!-- Footer -->
 <footer class="main-footer">
+  <div class="container clearfix">
 <div class="hash-tag">
   <p>#VISITSEDONA</p>
 </div>
@@ -127,6 +142,7 @@
   <a class="btn" href="https://htmlacademy.ru">
     <img src="img/htmlacademy.png" alt="logoacademy" width="113" height="39">
   </a>
+</div>
 </div>
   </footer>
  </body>

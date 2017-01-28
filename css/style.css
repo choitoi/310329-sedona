@@ -23,6 +23,138 @@ h3 {
 	text-transform: uppercase;
 }
 
-.social-btn{
+       /* Содержимое сайта */
+.clearfix::after {
+content: "";
+display: table;
+clear: both;
+}
+
+.container{
+width: 1200px;
+margin: 0 auto;
+padding: 0 auto;
+}
+           /* Шапка сайта */
+.main-navigation {
+min-height: 55px;
+}
+.main-navigation li {
+float:left;
+list-style:none;
+padding-right: 160px;
+}
+.main-navigation a{
+text-decoration: none;
+color: #000;
+}
+                 /*Лого*/
+.main-logo{
+position: relative;
+}
+.top{
+	position: absolute;
+	bottom:9px;
+	left: 0;
+}
+/* Заголовок после шапки */
+.tagline{
+text-align: center;
+width: 500px;
+padding: 0 auto;
+margin: 0 auto;
+}
+/* Первая полоса с информацией */
+.main-line-first{
+  margin-bottom:60px;
+  text-align: center;
+	clear: both;
+}
+.town{
+float: left;
+width:400px;
+min-height: 260px;
 background-color: #81b3d2;
+color: white;
+}
+.town h3{
+	color: white;
+}
+.town-image{
+float: right;
+width:800px;
+height: 260px;
+}
+/* Вторая полоса с информацией */
+.features-list-item{
+  float:left;
+  width: 400px;
+  min-height:330px;
+  text-align: center;
+}
+.features-icon{
+  width:75px;
+  height:75px;
+  margin-right: auto;
+  margin-left:auto;
+	margin-top: 60px;
+}
+      /* Третья полоса c информацией*/
+.main-line-third{
+margin-bottom:60px;
+text-align: center;
+clear: both;
+}
+.town-two{
+float: right;
+width:400px;
+min-height: 260px;
+background-color: #81b3d2;
+color: white;
+}
+.town-two h3{
+color: white;
+}
+.town-image-two{
+float: left;
+width:800px;
+height: 260px;
+}
+/* Четвертая полоса с информацией */
+.advantages{
+	float:left;
+	width: 400px;
+	min-height:260px;
+	text-align: center;
+	background-color: #eeeeee;
+	margin-bottom: 60px;
+}
+/* Пятая полоса */
+.promo{
+	width: 573px;
+  margin-right: auto;
+  margin-left:auto;
+  margin-bottom: 54px;
+  text-align: center;
+
+}
+
+   /*Footer*/
+.main-footer{
+	   text-align: center;
+	   padding-top: 35px;
+	   padding-bottom: 35px;
+		 background-color: black;
+}
+.hash-tag{
+	float: left;
+	width: 400px;
+}
+.footer-social{
+	float:left;
+	width: 400px;
+}
+.footer-copyright{
+float:right;
+width:400px;
 }
