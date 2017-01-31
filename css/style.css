@@ -22,6 +22,9 @@ h3 {
 	line-height: 21px;
 	text-transform: uppercase;
 }
+ul{
+	margin: 0;
+}
 
        /* Содержимое сайта */
 .clearfix::after {
@@ -39,9 +42,18 @@ padding: 0 auto;
 min-height: 55px;
 }
 .main-navigation li {
-float:left;
 list-style:none;
 padding-right: 160px;
+padding-top: 15px;
+}
+.navigation-logo{
+	position: absolute;
+	top: 0;
+	left: calc(50% - 145px /2);
+	z-index: 100;
+}
+.left{
+	float:left;
 }
 .right{
 	float: right;
@@ -59,10 +71,15 @@ height: 719px;
 .main-logo::after{
 	content: '';
 	display: inline-block;
+	width: 100%;
+	height: 57px;
 	position: absolute;
-	background-image: url(img/bottom-line.png);
+	background-image: url(../img/bottom-line.png);
 	bottom: 0;
+	background-size: contain;
+	background-repeat: no-repeat;
 	left: 0;
+	z-index: 100;
 }
 /* Заголовок после шапки */
 .tagline{
@@ -95,7 +112,7 @@ height: 260px;
 .features-list-item{
   float:left;
   width: 400px;
-  min-height:330px;
+  min-height:200px;
   text-align: center;
 }
 .features-icon{
@@ -164,5 +181,34 @@ width:400px;
 display: none;
 }
 .map-view img{
-	width: 1200px;
+display: block;
+width: 1200px;
+}
+
+.form-search-hotel{
+	  min-height: 217px;
+	  margin: 0 73px;
+}
+fieldset{
+	display: inline-block;
+}
+input{
+	display: block;
+}
+label{
+	display: inline;
+}
+.conclusion-result-line{
+	min-height: 86px;
+  margin: 0 73px;
+	outline: 1px solid blue;
+}
+.conclusion-result-line li{
+	list-style: none;
+	display: inline-block;
+}
+.conclusion-result-line a{
+	list-style: none;
+	float: right;
+	padding-bottom: 15px;
 }
