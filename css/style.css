@@ -197,12 +197,18 @@ fieldset{
 	width: 250px;
 	float:right;
 }
-
 input{
 	display: block;
 }
 label{
 	display: inline;
+	font-size:14px;
+}
+legend{
+	font-size: 14px;
+}
+.fsh{
+	font-size: 0;
 }
 /*--- Линия "Найдено" --*/
 
@@ -218,7 +224,6 @@ display: inline;
 .conclusion-result-line span{
 	padding-left: 20px;
 	padding-top: 30px;
-	display: inline;
 	float: left;
 }
 .conclusion-result-line ul{
@@ -237,7 +242,6 @@ list-style: none;
 .conclusion-result-line h3{
 	padding-top: 10px;
 	float:left;
-	display: inline;
 }
 /*-- Отображение отелей--*/
 .hotel{
@@ -245,6 +249,7 @@ list-style: none;
 	width: 1055px;
 	display: inline-block;
 	list-style: none;
+	outline: 1px solid black;
 }
 .photo-h{
 	padding-top: 25px;
@@ -257,8 +262,12 @@ list-style: none;
 	margin-left: 30px;
 	width: 300px;
 	float: left;
+	outline: 1px solid black;
 }
 .stars{
 	width: 200px;
 	float: right;
+}
+.hp p{
+	display: inline;
 }
