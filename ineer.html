@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона выбор отеля</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 <body>
@@ -24,7 +25,7 @@
 
                                <!-- Main content -->
 <main>
-<div class="form-search-hotel">
+<div class="form-search-hotel clearfix">
 <form action="#" method="get">
 <fieldset>
   <legend>Инфраструктура</legend>
@@ -38,25 +39,26 @@
   <input type="checkbox" name="motel" id="motel"> <label for="motel">Мотель</label>
   <input type="checkbox" name="apartments" id="apartments"> <label for="apartments">Апартаменты</label>
 </fieldset>
-<fieldset>
+<fieldset class="rightcoast">
   <legend>Стоимость в сутки(р)</legend>
   <label for="cost">от 0 до 3000</label>
   <input class="btn" type="range" min="0" max="3000" name="cost" id="cost">
+  <button type="button" name="button">Показать</button>
 </fieldset>
-<button type="submit" name="btn">Показать</button>
     </form>
-  </div>
+</div>
                    <!-- Conclusion result -->
-<div class="conclusion-result-line ">
+<div class="conclusion-result-line">
   <h3>Найдено:3</h3>
   <span>Сортировка:</span>
-  <ul>
+<ul>
   <li><a href="#">По цене</a></li>
   <li><a href="#">По типу</a></li>
   <li><a href="#">По рейтингу</a></li>
-<a class="arrow" href="#"><img src="img/up.png" alt="arrow up"></a>
-<a class="arrow" href="#"><img src="img/down.png" alt="arrow down"></a>
+  <a class="arrow" href="#"><img src="img/up.png" alt="arrow up"></a>
+  <a class="arrow" href="#"><img src="img/down.png" alt="arrow down"></a>
 </ul>
+
 </div>
                         <!-- Hotel selection -->
 <section class="hotel clearfix">
