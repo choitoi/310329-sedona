@@ -36,7 +36,6 @@ clear: both;
 width: 1200px;
 margin: 0 auto;
 padding: 0 auto;
-outline: 1px solid red;
 }
            /* Шапка сайта*/
 .main-navigation {
@@ -189,12 +188,10 @@ width: 1200px;
 	width: 1055px;
 	min-height: 217px;
   margin: 0 73px;
-	outline: 1px solid black;
 }
 fieldset{
 	display: inline-block;
 	width: 270px;
-	outline: 1px solid red;
 }
 .rightcoast{
 	width: 250px;
@@ -213,26 +210,38 @@ label{
 width: 1055px;
 min-height: 86px;
 margin: 0 75px;
-outline: 1px solid blue;
 }
 .conclusion-result-line li{
 list-style: none;
 display: inline;
 }
+.conclusion-result-line span{
+	padding-left: 20px;
+	padding-top: 30px;
+	display: inline;
+	float: left;
+}
 .conclusion-result-line ul{
-float: right;
+padding-top: 30px;
+float: left;
 }
 .conclusion-result-line a{
 list-style: none;
-padding-bottom: 15px;
+}
+.arrow{
+	padding-top: 30px;
+	width: 20px;
+	height: 10px;
+	float: right;
 }
 .conclusion-result-line h3{
+	padding-top: 10px;
+	float:left;
 	display: inline;
 }
 /*-- Отображение отелей--*/
 .hotel{
   margin-left: 75px;
-	outline: 1px dashed red;
 	width: 1055px;
 	display: inline-block;
 	list-style: none;
@@ -246,7 +255,6 @@ padding-bottom: 15px;
 .hotel-description{
 	padding-left: 50px;
 	margin-left: 30px;
-	outline: 1px solid blue;
 	width: 300px;
 	float: left;
 }
