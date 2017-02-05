@@ -1,3 +1,5 @@
+
+
 body {
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-weight: normal;
@@ -52,6 +54,7 @@ min-height: 55px;
 display: inline-block;
 vertical-align: top;
 width: 20%;
+font-weight: bold
 }
 .navigation-logo{
 	position: absolute;
