@@ -24,9 +24,7 @@ h3 {
 	line-height: 21px;
 	text-transform: uppercase;
 }
-ul{
-	margin: 0;
-}
+
 
        /* Содержимое сайта */
 .clearfix::after {
@@ -39,7 +37,8 @@ max-width: 1200px;
 min-width: 768px;
 margin: 0 auto;
 background: #fff;
-box-shadow: 0 -5px 15px 0 rgba(0,0,0,.2);}
+box-shadow: 0 -5px 15px 0 rgba(0,0,0,.2);
+position: relative;}
            /* Шапка сайта*/
 .main-navigation {
 min-height: 55px;
@@ -69,14 +68,24 @@ font-weight: bold
 	float: right;
 }
 .main-navigation a{
-	display: block;
-	padding: 15px 0;
-	font-size: 14px;
-	line-height: 26px;
-	font-weight: bold;
-	text-align: center;
-	text-decoration: none;
-	color: #000;
+display: block;
+font-size: 14px;
+padding: 15px 0;
+line-height: 26px;
+font-weight: bold;
+text-align: center;
+text-decoration: none;
+color: #000;
+}
+.main-navigation .active{
+color: #766357;
+}
+.main-navigation .active:hover{
+	color: #604e43;
+}
+.main-navigation .active:active{
+	color: #766357;
+  opacity: .3;
 }
 .main-navigation a:hover{
 	 color:#81b3d2;
@@ -233,6 +242,13 @@ height: 120px;
 text-align: center;
 opacity: 0.9;
 background-color:#fdfdfd;
+position: absolute;
+bottom: 0;
+z-index: 100;
+opacity: .9;
+}
+.ineer footer{
+	position: static;
 }
 .hash-tag{
 float: left;
@@ -269,9 +285,9 @@ width: 1200px;
 }
 /*-- Форма поиска отеля --*/
 .form-search-hotel{
-	width: 1055px;
 	min-height: 217px;
-  margin: 0 73px;
+	padding: 0 73px;
+	background-image: url(../img/bg-hotels-page.jpg);
 }
 fieldset{
 	display: inline-block;
@@ -305,6 +321,10 @@ margin: 0 75px;
 list-style: none;
 display: inline;
 }
+.conclusion-result-line ul{
+	margin: 0;
+
+}
 .conclusion-result-line span{
 padding-left: 20px;
 padding-top: 30px;
@@ -324,8 +344,6 @@ list-style: none;
 	height: 10px;
 	float: right;
 }
-.arrow:hover{
-	background: black;}
 .conclusion-result-line h3{
 	padding-top: 10px;
 	float:left;
@@ -336,7 +354,6 @@ list-style: none;
 	width: 1055px;
 	display: inline-block;
 	list-style: none;
-	outline: 1px solid black;
 }
 .photo-h{
 	padding-top: 25px;
@@ -349,7 +366,6 @@ list-style: none;
 	margin-left: 30px;
 	width: 300px;
 	float: left;
-	outline: 1px solid black;
 }
 .stars{
 	width: 200px;
@@ -391,4 +407,14 @@ cursor: pointer;
 }
 .btn-res:active{
 	background: #503e33;
+}
+.btn-light{
+margin: 12px 0;
+padding: 5px 34px;
+border: 2px solid #fff;
+border-radius: 3px;
+font-weight: normal;
+background: transparent;
+font-size: 18px;
+color: white;
 }
