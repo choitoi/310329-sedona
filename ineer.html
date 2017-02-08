@@ -27,19 +27,45 @@
                                <!-- Main content -->
 <main>
 <div class="form-search-hotel clearfix">
-<form class="fsh" action="#" method="get">
+<form action="#" method="get">
+  <div class="options">
 <fieldset>
-  <legend>Инфраструктура</legend>
-  <input type="checkbox" name="pool" id="pool">  <label for="pool">Бассейн</label>
-  <input type="checkbox" name="parking" id="parking"> <label for="parking">Парковка</label>
-  <input type="checkbox" name="wi-fi" id="wi-fi"> <label for="wi-fi">Wi-fi</label>
+<legend>Инфраструктура:</legend>
+<ul class="checkbox-list">
+<li class="checkbox-item">
+<input type="checkbox" id="chb-1" name="feature-1" checked>
+<label for="chb-1">Бассейн</label>
+<li>
+<li class="checkbox-item">
+<input type="checkbox" id="chb-2" name="feature-2">
+<label for="chb-2">Парковка</label>
+</li>
+<li class="checkbox-item">
+<input type="checkbox" id="chb-3" name="feature-3">
+<label for="chb-3">Wi-Fi</label>
+</li>
+</ul>
 </fieldset>
+</div>
+<div class="options">
 <fieldset>
-  <legend>Тип жилья</legend>
-  <input type="checkbox" name="hotel" id="hotel"> <label for="hotel">Гостиница</label>
-  <input type="checkbox" name="motel" id="motel"> <label for="motel">Мотель</label>
-  <input type="checkbox" name="apartments" id="apartments"> <label for="apartments">Апартаменты</label>
+<legend>Тип жилья:</legend>
+<ul class="checkbox-list">
+<li class="checkbox-item">
+<input type="checkbox" id="chb-4" name="type-1" checked>
+<label for="chb-4">Гостиница</label>
+</li>
+<li class="checkbox-item">
+<input type="checkbox" id="chb-5" name="type-2" checked>
+<label for="chb-5">Мотель</label>
+</li>
+<li class="checkbox-item">
+<input type="checkbox" id="chb-6" name="type-3" checked>
+<label for="chb-6">Апартаменты</label>
+</li>
+</ul>
 </fieldset>
+</div>
 <div class="filter-range">
 <div class="filter-range-title">
 Стоимость в сутки (р):

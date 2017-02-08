@@ -411,15 +411,17 @@ list-style: none;
 }
 /*-- Отображение отелей--*/
 .hotel{
-  margin-left: 75px;
+	margin-left: 75px;
 	width: 1055px;
+	height: 150px;
 	display: inline-block;
 	list-style: none;
+	border-top: 2px solid #e5e5e5;
 }
 .photo-h{
 	padding-top: 25px;
-	width: 100px;
-	height: 100px;
+	width: 135px;
+	height: 90px;
 	float: left;
 }
 .hotel-description{
@@ -605,4 +607,78 @@ cursor: pointer;
 .btn-transparent:hover {
 color: #000000;
 background: #ffffff;
+}
+
+/*---*/
+.options ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.checkbox-item {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.options fieldset {
+  border: none;
+}
+
+.options legend {
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+
+  margin-left: -41px;
+}
+
+.options:last-of-type legend {
+  text-align: left;
+  margin-left: 0;
+}
+
+.options label {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.checkbox-item label {
+  position: relative;
+  cursor: pointer;
+}
+
+
+.checkbox-item label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -41px;
+    z-index: 1;
+    width: 22px;
+    height: 22px;
+    background-image: url("../img/checkbox.png");
+}
+
+.checkbox-item input[type="checkbox"] {
+    display: none
+}
+
+.checkbox-item input[type="checkbox"]:checked ~ label::before {
+    width: 26px;
+    height: 22px;
+    background-image: url("../img/checkbox-checked.png");
+}
+
+.options {
+  width: 225px;
+  float: left;
+padding-top: 30px;
+padding-left: 70px;
+
 }
