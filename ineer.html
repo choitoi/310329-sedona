@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона выбор отеля</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -39,12 +40,23 @@
   <input type="checkbox" name="motel" id="motel"> <label for="motel">Мотель</label>
   <input type="checkbox" name="apartments" id="apartments"> <label for="apartments">Апартаменты</label>
 </fieldset>
-<fieldset class="rightcoast">
-  <legend>Стоимость в сутки(р)</legend>
-  <label for="cost">от 0 до 3000</label>
-  <input class="btn" type="range" min="0" max="3000" name="cost" id="cost">
-  <button class="btn-light" type="submit">Показать</button>
-</fieldset>
+<div class="filter-range">
+<div class="filter-range-title">
+Стоимость в сутки (р):
+</div>
+<div class="price-controls">
+<label class="min-price">от 0 <input type="text" name="min-price" ></label>
+<label class="max-price">до 3000<input type="text" name="max-price" ></label>
+</div>
+<div class="range-controls">
+<div class="scale">
+<div class="bar"></div>
+</div>
+<div class="range-toggle range-toggle-min"></div>
+<div class="range-toggle range-toggle-max"></div>
+</div>
+<button class="btn-transparent" type="submit">Показать</button>
+</div>
     </form>
 </div>
                    <!-- Conclusion result -->
@@ -121,14 +133,13 @@
 <p>#VISITSEDONA</p>
 </div>
 <div class="footer-social">
-<a class="social-btn" href="#"><img src="img/twitter.png" alt="twitter"></a>
-<a class="social-btn" href="#"><img src="img/facebook.png" alt="facebook"></a>
-<a class="social-btn" href="#"><img src="img/youtube.png" alt="youtube"></a>
+<a class="social-btn social-btn-tw" href="#"></a>
+<a class="social-btn social-btn-fb" href="#"></a>
+<a class="social-btn social-btn-yt" href="#"></a>
 </div>
 <div class="footer-copyright">
-<span>Website by</span>
+<p>Website by</p>
 <a href="https://htmlacademy.ru">
-<img src="img/htmlacademy.png" alt="logoacademy" width="113" height="39">
 </a>
 </div>
 </footer>

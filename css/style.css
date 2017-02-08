@@ -145,14 +145,17 @@ background-color: #81b3d2;
 color: white;
 }
 .town h3{
+width: 120px;
 padding-top: 50px;
 margin: 10px auto;
 color: white;
 font-size: 21px;
 line-height: 21px;
 font-weight: bold;
+text-align: center;
 }
 .town p{
+	width: 300px;
 	margin: 22px auto;
 }
 .town span{
@@ -184,7 +187,6 @@ height: 256px;
 .features-list-item p{
 font-size: 14px;
 line-height: 21px;
-
 }
       /* Третья полоса c информацией*/
 .main-line-third{
@@ -198,6 +200,7 @@ background-color: #81b3d2;
 color: white;
 }
 .town-two h3{
+	width: 200px;
 padding-top: 50px;
 margin: 10px auto;
 color: white;
@@ -206,6 +209,8 @@ line-height: 21px;
 font-weight: bold;
 }
 .town-two p{
+	padding-left: 25px;
+	width: 350px;
 	font-size: 14px;
 	line-height: 21px;
 }
@@ -233,8 +238,11 @@ height: 256px;
 	width: 573px;
   margin-right: auto;
   margin-left:auto;
-  margin-bottom: 54px;
   text-align: center;
+}
+.promo h2{
+	font-size: 30px;
+	line-height: 24px;
 }
    /*Footer*/
 .main-footer{
@@ -250,6 +258,39 @@ opacity: .9;
 .ineer footer{
 	position: static;
 }
+.social-btn{
+margin-top: 35px;
+display: inline-block;
+width: 46px;
+height: 48px;
+font-size: 0;
+vertical-align: top;
+text-decoration: none;
+background-color: #81b3d2;
+}
+.social-btn-tw{
+background: #81b3d2 url("../img/twitter.png") no-repeat center;
+}
+.social-btn-fb{
+	background: #81b3d2 url("../img/facebook.png") no-repeat center;
+}
+.social-btn-yt{
+	background: #81b3d2 url("../img/youtube.png") no-repeat center;
+}
+.social-btn-tw:hover,
+.social-btn-fb:hover,
+.social-btn-yt:hover {
+background-color: #669ec0;
+}
+.social-btn-tw:active {
+background: #5496bd url("../img/twitter-io.png") no-repeat center;
+}
+.social-btn-fb:active {
+background: #5496bd url("../img/facebook-io.png") no-repeat center;
+}
+.social-btn-yt:active {
+background: #5496bd url("../img/youtube-io.png") no-repeat center;
+}
 .hash-tag{
 float: left;
 width: 400px;
@@ -259,22 +300,42 @@ width: 400px;
 	line-height: 26px;
 	color: black;
 	font-weight: bold;
-	margin-top: 45px;
+	margin-top: 47px;
 }
 .footer-social{
 	float:left;
 	width: 400px;
+	text-align: center;
 }
 .footer-copyright{
-float:right;
-width:400px;
+width: 400px;
+float: right;
+text-align: center;
+vertical-align: top;
+font-size: 0;
 }
 .footer-copyright p{
-font-size: 14px;
-line-height: 21px;
+	display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  color: #000000;
+  margin-top: 50px;
 }
 .footer-copyright a{
-	margin-top: 45px;
+margin-left: 10px;
+margin-top: 40px;
+display: inline-block;
+vertical-align: top;
+width: 113px;
+height: 39px;
+background-image: url("../img/htmlacademy.png");
+}
+.footer-copyright a:hover {
+  background-image: url("../img/hlh.png");
+}
+
+.footer-copyright a:active {
+  background-image: url("../img/hla.png");
 }
 .form-search{
 display: none;
@@ -291,7 +352,7 @@ width: 1200px;
 }
 fieldset{
 	display: inline-block;
-	width: 270px;
+	width: 250px;
 }
 .rightcoast{
 	width: 250px;
@@ -417,4 +478,131 @@ font-weight: normal;
 background: transparent;
 font-size: 18px;
 color: white;
+}
+.promo a{
+	display: block;
+	  width: 528px;
+	  margin: 0 auto;
+	  padding-top: 30px;
+	  padding-bottom: 30px;
+	  padding-left: 20px;
+	  padding-right: 20px;
+
+	  font-weight: 700;
+	  font-size: 21px;
+	  line-height: 26px;
+	  font-family: "PT Sans", "Arial", sans-serif;
+
+	  text-align: center;
+	  color: #ffffff;
+	  text-transform: uppercase;
+	  text-decoration: none;
+
+	  background-color: #766357;
+}
+
+/*-- Filter range --*/
+.filter-range{
+	float: right;
+	padding-top: 29px;
+	margin-right: 0;
+	width: 330px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+.filter-range-title {
+  margin-bottom: 9px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+.price-controls {
+	position: relative;
+	font-size: 0;
+  height: 36px;
+  margin-bottom: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+.price-controls .min-price,
+.price-controls .max-price {
+width: 90px;
+padding-left: 65px;
+}
+.price-controls input {
+width: 50px;
+margin: 0;
+color: inherit;
+font: inherit;
+background: none;
+border: none;
+}
+.price-controls::after {
+content: "";
+position: absolute;
+width: 2px;
+height: 22px;
+background: #ffffff;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.range-controls {
+position: relative;
+margin-bottom: 32px;
+}
+.range-controls .scale {
+height: 2px;
+background: rgba(255, 255, 255, 0.3);
+}
+.range-controls .bar {
+width: 80%;
+height: 2px;
+background: #ffffff;
+}
+.range-toggle {
+position: absolute;
+top: -9px;
+width: 4px;
+height: 4px;
+background: #ababab;
+border: 8px solid #ffffff;
+border-radius: 50%;
+box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+cursor: pointer;
+}
+.range-toggle-min {
+  left: 0;
+}
+.range-toggle-max {
+  left: 80%;
+}
+.range-toggle:hover {
+  background: #1c4f80;
+}
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.btn-transparent:hover {
+color: #000000;
+background: #ffffff;
 }
