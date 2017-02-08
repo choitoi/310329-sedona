@@ -381,10 +381,17 @@ margin: 0 75px;
 .conclusion-result-line li{
 list-style: none;
 display: inline;
+margin-right: 28px;
 }
 .conclusion-result-line ul{
 	margin: 0;
-
+}
+.active-in{
+	color: #81b3d2;
+}
+.dot{
+color: #d1d1d1;
+border-bottom: 1px dotted #81b3d2;
 }
 .conclusion-result-line span{
 padding-left: 20px;
@@ -425,7 +432,6 @@ list-style: none;
 	float: left;
 }
 .hotel-description{
-	padding-left: 50px;
 	margin-left: 30px;
 	width: 300px;
 	float: left;
