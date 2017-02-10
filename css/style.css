@@ -1,5 +1,6 @@
-
-
+/*-----------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------HEADER-------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
 body {
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-weight: normal;
@@ -24,9 +25,6 @@ h3 {
 	line-height: 21px;
 	text-transform: uppercase;
 }
-
-
-       /* Содержимое сайта */
 .clearfix::after {
 content: "";
 display: table;
@@ -39,7 +37,11 @@ margin: 0 auto;
 background: #fff;
 box-shadow: 0 -5px 15px 0 rgba(0,0,0,.2);
 position: relative;}
-           /* Шапка сайта*/
+/*-----------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------HEADER-------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------NAV---------------------------------------------------*/
 .main-navigation {
 min-height: 55px;
 }
@@ -66,6 +68,9 @@ font-weight: bold
 }
 .right{
 	float: right;
+}
+.index-link{
+	padding: 0;
 }
 .main-navigation a{
 display: block;
@@ -94,7 +99,8 @@ color: #766357;
 	color: #000;
 	opacity: .3;
 }
-                 /*Лого*/
+/*-----------------------------------------------NAV---------------------------------------------------*/
+/*-----------------------------------------------LOGO------------------------------------------------*/
 .main-logo{
 position: relative;
 height: 510px;
@@ -114,7 +120,12 @@ background-size: cover;
 	left: 0;
 	z-index: 100;
 }
-/* Заголовок после шапки */
+/*-----------------------------------------------LOGO------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------MAIN---------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
 .tagline{
 padding: 31px 0;
 line-height: 26px;
@@ -244,7 +255,9 @@ height: 256px;
 	font-size: 30px;
 	line-height: 24px;
 }
-   /*Footer*/
+/*-----------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------FOOTER-------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
 .main-footer{
 height: 120px;
 text-align: center;
@@ -379,12 +392,11 @@ min-height: 86px;
 margin: 0 75px;
 }
 .conclusion-result-line li{
+font-size: 12px;
+line-height: 18px;
 list-style: none;
 display: inline;
 margin-right: 28px;
-}
-.conclusion-result-line ul{
-	margin: 0;
 }
 .active-in{
 	color: #81b3d2;
@@ -395,12 +407,16 @@ border-bottom: 1px dotted #81b3d2;
 }
 .conclusion-result-line span{
 padding-left: 20px;
-padding-top: 30px;
+padding-top: 36px;
 float: left;
+font-size: 12px;
+line-height: 18px;
 }
 .conclusion-result-line ul{
-padding-top: 30px;
+margin: 0;
+padding-top: 32px;
 float: left;
+font-size: 11px;
 }
 .conclusion-result-line a{
 text-decoration: none;
@@ -413,6 +429,8 @@ list-style: none;
 	float: right;
 }
 .conclusion-result-line h3{
+	font-size: 21px;
+	line-height: 26px;
 	padding-top: 10px;
 	float:left;
 }
@@ -420,13 +438,13 @@ list-style: none;
 .hotel{
 	margin-left: 75px;
 	width: 1055px;
-	height: 150px;
+	height: 151px;
 	display: inline-block;
 	list-style: none;
-	border-top: 2px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
 }
 .photo-h{
-	padding-top: 25px;
+	padding-top: 30px;
 	width: 135px;
 	height: 90px;
 	float: left;
@@ -436,12 +454,24 @@ list-style: none;
 	width: 300px;
 	float: left;
 }
+
 .stars{
 	width: 200px;
 	float: right;
 }
+.hotel-rating{
+	display: inline-block;
+margin-top: 90px;
+    width: 108px;
+    height: 27px;
+    line-height: 27px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #f2f2f2;
+}
 .hp p{
-	display: inline;
+display: inline;
+padding-right: 30px;
 }
 /*--Стилизация кнопок--*/
 .btn{
@@ -460,6 +490,9 @@ text-decoration: none;
 color: #fff;
 background: #81b3d2;
 cursor: pointer;
+}
+.btn-more{
+	margin-right: 5px;
 }
 .btn:hover{
 	background: #669ec0;
