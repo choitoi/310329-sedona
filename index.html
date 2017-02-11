@@ -98,32 +98,33 @@
   <a class="btn-order" href="#">Поиск гостиницы в Седоне</a>
 </div>
 <div class="form-search">
- <form class="#" action="#" method="#">
- <div class="date-race">
-  <label for="arriving">Дата заезда<span class="icon-calendar"><img src="img/calendar.png"></span></label>
-  <input type="date" name="arriving" id="arriving">
-</div>
-<div class="date-exit">
-  <label for="departure">Дата выезда<span class="icon-calendar"><img src="img/calendar.png"></span></label>
-  <input type="date" name="departure" id="departure">
-</div>
-  <label for="grown-quantity">Количество взрослых</label>
-  <button type="button" name="minus">-</button>
-  <input type="number" name="grown-quantity" id="grown-quantity">
-  <button type="button" name="plus">+</button>
-  <label for="child-quantity">Количество детей</label>
-  <button type="button" name="minus">-</button>
-  <input type="number" name="child-quantity" id="child-quantity">
-  <button type="button" name="plus">+</button>
-  <button class="btn" type="submit">Найти</button>
-  </form>
- </div>
+            <form class="clearfix" action="#" method="post">
+              <label for="date-come">Дата заезда:</label>
+              <input class="input-date-come" id="date-come" type="text" name="date come" placeholder="24 АПРЕЛЯ 2017">
+              <span class="icon-calendar"></span>
+
+              <label for="date-exit">Дата выезда:</label>
+              <input class="input-date-exit" id="date-exit" type="text" name="date exit" placeholder="4 ИЮНЯ 2017">
+              <span class="icon-calendar"></span>
+              <label for="grown-up">Взрослые:</label>
+              <div class="box-input-number-grown-up">
+                <button type="button">&#8722;</button>
+                <input class="input-number-grown-up" id="grown-up" type="text" name="all adults" placeholder="2">
+                <button type="button">+</button>
+              </div>
+              <label for="number-children">Дети:</label>
+              <div class="box-input-number-child">
+                <button type="button">&#8722;</button>
+                <input class="input-number-child" id="number-children" type="text" name="all children" placeholder="0">
+                <button type="button">+</button>
+              </div>
+              <button class="btn-search" type="submit">Найти</button>
+            </form>
+          </div>
 </section>
-<section class="map">
-<div class="map-view">
-<img src="img/map.jpg" alt="map" width="600" height="500">
+<div class="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18050597594!2d-111.83015799429869!3d34.854373381033135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1485165209734"></iframe>
 </div>
-</section>
 </main>
                        <!-- Footer -->
 <footer class="main-footer clearfix">

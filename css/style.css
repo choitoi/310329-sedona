@@ -255,6 +255,11 @@ height: 256px;
 	font-size: 30px;
 	line-height: 24px;
 }
+.map iframe{
+	width: 1200px;
+	height: 583px;
+	border: none;
+}
 /*-----------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------FOOTER-------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
@@ -350,13 +355,6 @@ background-image: url("../img/htmlacademy.png");
 .footer-copyright a:active {
   background-image: url("../img/hla.png");
 }
-.form-search{
-display: none;
-}
-.map-view img{
-display: block;
-width: 1200px;
-}
 /*-- Форма поиска отеля --*/
 .form-search-hotel{
 	min-height: 217px;
@@ -414,7 +412,7 @@ line-height: 18px;
 }
 .conclusion-result-line ul{
 margin: 0;
-padding-top: 32px;
+padding-top: 34px;
 float: left;
 font-size: 11px;
 }
@@ -454,20 +452,19 @@ list-style: none;
 	width: 300px;
 	float: left;
 }
-
 .stars{
 	width: 200px;
 	float: right;
 }
 .hotel-rating{
-	display: inline-block;
+display: inline-block;
 margin-top: 90px;
-    width: 108px;
-    height: 27px;
-    line-height: 27px;
-    vertical-align: middle;
-    text-align: center;
-    background-color: #f2f2f2;
+width: 108px;
+height: 27px;
+line-height: 27px;
+vertical-align: middle;
+text-align: center;
+background-color: #f2f2f2;
 }
 .hp p{
 display: inline;
@@ -521,27 +518,23 @@ font-size: 18px;
 color: white;
 }
 .promo a{
-	display: block;
-	  width: 528px;
-	  margin: 0 auto;
-	  padding-top: 30px;
-	  padding-bottom: 30px;
-	  padding-left: 20px;
-	  padding-right: 20px;
-
-	  font-weight: 700;
-	  font-size: 21px;
-	  line-height: 26px;
-	  font-family: "PT Sans", "Arial", sans-serif;
-
-	  text-align: center;
-	  color: #ffffff;
-	  text-transform: uppercase;
-	  text-decoration: none;
-
-	  background-color: #766357;
+display: block;
+width: 528px;
+margin: 0 auto;
+padding-top: 30px;
+padding-bottom: 30px;
+padding-left: 20px;
+padding-right: 20px;
+font-weight: 700;
+font-size: 21px;
+line-height: 26px;
+font-family: "PT Sans", "Arial", sans-serif;
+text-align: center;
+color: #ffffff;
+text-transform: uppercase;
+text-decoration: none;
+background-color: #766357;
 }
-
 /*-- Filter range --*/
 .filter-range{
 	float: right;
@@ -652,47 +645,37 @@ background: #ffffff;
 .options ul {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
-
 .checkbox-item {
   padding-top: 12px;
   padding-bottom: 12px;
 }
-
 .options fieldset {
   border: none;
 }
-
 .options legend {
   border: none;
   color: #ffffff;
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
-
   margin-left: -41px;
 }
-
 .options:last-of-type legend {
   text-align: left;
   margin-left: 0;
 }
-
 .options label {
   color: #ffffff;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
 }
-
 .checkbox-item label {
   position: relative;
   cursor: pointer;
 }
-
-
 .checkbox-item label::before {
     content: "";
     position: absolute;
@@ -703,7 +686,6 @@ background: #ffffff;
     height: 22px;
     background-image: url("../img/checkbox.png");
 }
-
 .checkbox-item input[type="checkbox"] {
     display: none
 }
@@ -713,11 +695,178 @@ background: #ffffff;
     height: 22px;
     background-image: url("../img/checkbox-checked.png");
 }
-
 .options {
   width: 225px;
   float: left;
 padding-top: 30px;
 padding-left: 70px;
+}
+/*--------------------- FORM INDEX ---------*/
+.form-search{
+position: absolute;
+left: 50%;
+margin-left: -284px;
+padding-left: 55px;
+padding-right: 55px;
+padding-top: 55px;
+width: 568px;
+height: 395px;
+font-size: 14px;
+font-weight: bold;
+background-color: #ffffff;
+box-sizing: border-box;
+}
+.form-search label:nth-of-type(1) {
+  float: left;
+  margin-top: 10px;
+}
+input[type="text"] {
+    font-family: inherit;
+}
+.input-date-come {
+  float: right;
+  width: 336px;
+  margin-bottom: 30px;
+  padding: 11px 0 10px 11px;
+  background-color: #f2f2f2;
+  border: none;
+}
+.form-search label:nth-of-type(2) {
+  float: left;
+  margin-top: 45px;
+}
+.input-date-exit {
+  float: right;
+  width: 336px;
+  margin-bottom: 30px;
+  padding: 11px 0 10px 11px;
+  background-color: #f2f2f2;
+  border: none;
+}
+.form-search label:nth-of-type(3) {
+  float: left;
+  margin-top: 48px;
+}
+.form-search label:nth-of-type(4) {
+  float: left;
+  margin-top: 10px;
+  margin-left: 53px;
+}
+.input-date-come:hover,
+.input-date-exit:hover {
+  background-color: #ebebeb;
+}
+.input-date-come:focus,
+.input-date-exit:focus {
+  background-color: #ffffff;
+  box-shadow: inset 0 0 5px #e5e5e5;
+}
+input[type="text"],
+input[type="number"] {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.box-input-number-grown-up {
+  float: left;
+  display: inline-block;
+  margin: 0;
+  margin-left: 40px;
+  margin-bottom: 30px;
+  padding: 0;
+  height: 38px;
+  vertical-align: top;
+  font-size: 0;
+  text-align: center;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+}
+.input-number-grown-up,
+.input-number-child {
+  margin: 0;
+  padding: 0;
+  width: 38px;
+  height: 38px;
+  border: none;
+  vertical-align: top;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+.box-input-number-child {
+  float: right;
+  display: inline-block;
+  margin-bottom: 30px;
+  padding: 0;
+  height: 38px;
+  font-size: 0;
+  vertical-align: top;
+  text-align: center;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+}
+.icon-calendar:nth-of-type(1) {
+  position: absolute;
+  display: block;
+  right: 65px;
+  top: 63px;
+  width: 21px;
+  height: 22px;
+  background-image: url("../img/calendar.png");
+  background-repeat: no-repeat;
+}
 
+.icon-calendar:nth-of-type(2) {
+  position: absolute;
+  display: block;
+  right: 65px;
+  top: 133px;
+  width: 21px;
+  height: 22px;
+  background-image: url("../img/calendar.png");
+  background-repeat: no-repeat;
+}
+.box-input-number-grown-up button:nth-of-type(1),
+.box-input-number-grown-up button:nth-of-type(2),
+.box-input-number-child button:nth-of-type(1),
+.box-input-number-child button:nth-of-type(2) {
+  width: 38px;
+  height: 38px;
+  font-size: 21px;
+  font-weight: bold;
+  color: #a9a9a9;
+  background-color: #f2f2f2;
+  border: none;
+  cursor: pointer;
+}
+.form-search button:hover {
+  color: #000000;
+}
+.form-search button:active {
+  color: #81b3d2;
+}
+.form-search button:focus,
+input[type="text"]:focus {
+  outline: none;
+}
+.form-search button[type="submit"] {
+  position: static;
+  clear: both;
+  margin-top: 25px;
+  width: 460px;
+  height: 59px;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: bold;
+  background-color: #81b3d2;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.form-search button[type="submit"]:hover {
+  background-color: #669ec0;
+}
+.form-search button[type="submit"]:active {
+  color: #7eb0cd;
+  background-color: #5496bd;
 }
