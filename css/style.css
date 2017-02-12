@@ -480,6 +480,7 @@ padding-right: 70px;
 	display: inline-block;
 	list-style: none;
 	border-bottom: 1px solid #e5e5e5;
+	position: relative;
 }
 .border-top{
 border-top: 1px solid #e5e5e5;
@@ -514,6 +515,42 @@ border-top: 1px solid #e5e5e5;
 }
 .stars{
 	float: right;
+}
+.one:before{
+	content: '';
+	width: 71px;
+	display: block;
+  height: 16px;
+	float: right;
+	right: 75px;
+	margin-top: 30px;
+	position: absolute;
+	background-repeat: repeat-x;
+	background-image: url(../img/star.png);
+}
+.two:before{
+	content: '';
+	width: 55px;
+	display: block;
+  height: 16px;
+	float: right;
+	right: 75px;
+	margin-top: 30px;
+	position: absolute;
+	background-repeat: repeat-x;
+	background-image: url(../img/star.png);
+}
+.three:before{
+	content: '';
+	width: 36px;
+	display: block;
+  height: 16px;
+	float: right;
+	right: 75px;
+	margin-top: 30px;
+	position: absolute;
+	background-repeat: repeat-x;
+	background-image: url(../img/star.png);
 }
 
 .hotel-rating{
