@@ -406,6 +406,14 @@ margin-right: 28px;
 color: #d1d1d1;
 border-bottom: 1px dotted #81b3d2;
 }
+.dot:hover{
+	color: #81b3d2;
+}
+.dot:active{
+	border: none;
+	text-decoration: none;
+	color:#000;
+}
 .conclusion-result-line span{
 padding-left: 20px;
 padding-top: 36px;
@@ -423,11 +431,39 @@ font-size: 11px;
 text-decoration: none;
 list-style: none;
 }
-.arrow{
-	padding-top: 30px;
-	width: 20px;
-	height: 10px;
+.arrow-down{
+	margin-right: 18px;
+	margin-top: 38px;
 	float: right;
+	width: 11px;
+	height: 10px;
+	background-image: url(../img/sgd.png);
+	background-repeat: no-repeat;
+}
+.arrow-down:hover{
+	background-image: url(../img/sbd.png);
+	background-repeat: no-repeat;
+}
+.arrow-down:active{
+	background-image: url(../img/down.png);
+	background-repeat: no-repeat;
+}
+.arrow-up{
+	margin-top: 38px;
+	padding-right: 15px;
+	float: right;
+	width: 11px;
+	height: 10px;
+	background-image: url(../img/up.png);
+	background-repeat: no-repeat;
+}
+.arrow-up:hover{
+	background-image: url(../img/sb.png);
+	background-repeat: no-repeat;
+}
+.arrow-up:active{
+	background-image: url(../img/sbl.png);
+	background-repeat: no-repeat;
 }
 .conclusion-result-line h3{
 	font-size: 21px;
@@ -437,12 +473,16 @@ list-style: none;
 }
 /*-- Отображение отелей--*/
 .hotel{
-	margin-left: 75px;
+padding-left: 75px;
+padding-right: 70px;
 	width: 1055px;
 	height: 151px;
 	display: inline-block;
 	list-style: none;
 	border-bottom: 1px solid #e5e5e5;
+}
+.border-top{
+border-top: 1px solid #e5e5e5;
 }
 .photo-h{
 	padding-top: 30px;
@@ -451,14 +491,31 @@ list-style: none;
 	float: left;
 }
 .hotel-description{
+	margin-top: 30px;
 	margin-left: 30px;
 	width: 300px;
 	float: left;
 }
+.htl{
+	padding-top: 28px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-weight: bold;
+	font-size: 21px;
+	color: #000;
+	line-height: 21px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.htl:hover{
+	color: #81b3d2;
+}
+.htl:active{
+	color: #cacaca;
+}
 .stars{
-	width: 200px;
 	float: right;
 }
+
 .hotel-rating{
 display: inline-block;
 margin-top: 90px;
@@ -470,8 +527,15 @@ text-align: center;
 background-color: #f2f2f2;
 }
 .hp p{
-display: inline;
+display: inline-block;
 padding-right: 30px;
+line-height: 1px;
+width: 110px;
+box-sizing: border-box;
+margin-right: 5px;
+}
+.hp{
+	margin-bottom: 4px;
 }
 /*--Стилизация кнопок--*/
 .btn{
@@ -709,7 +773,7 @@ background: #ffffff;
   width: 225px;
   float: left;
 padding-top: 30px;
-padding-left: 70px;
+padding-left: 30px;
 }
 /*--------------------- FORM INDEX ---------*/
 .form-search{
