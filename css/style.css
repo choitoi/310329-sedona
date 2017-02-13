@@ -358,7 +358,9 @@ background-image: url("../img/htmlacademy.png");
 .footer-copyright a:active {
   background-image: url("../img/hla.png");
 }
-/*-- Форма поиска отеля --*/
+/*-----------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------Начало ineer.html-------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
 .form-search-hotel{
 	min-height: 217px;
 	padding: 0 73px;
@@ -574,7 +576,9 @@ margin-right: 5px;
 .hp{
 	margin-bottom: 4px;
 }
-/*--Стилизация кнопок--*/
+/*-----------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------BTN Style-------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
 .btn{
 display: inline-block;
 vertical-align: top;
@@ -812,7 +816,9 @@ background: #ffffff;
 padding-top: 30px;
 padding-left: 30px;
 }
-/*--------------------- FORM INDEX ---------*/
+/*-----------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------FORM index.html-------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
 .form-search{
 position: absolute;
 left: 50%;
@@ -826,6 +832,32 @@ font-size: 14px;
 font-weight: bold;
 background-color: #ffffff;
 box-sizing: border-box;
+animation-duration: 1s;
+animation: form-show;
+}
+.hotel-search-form-hide {
+  display: none;
+}
+@-webkit-keyframes form-show {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes form-show {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 .form-search label:nth-of-type(1) {
   float: left;
