@@ -40,8 +40,7 @@ h3 {
 }
 
 .container {
-  max-width: 1200px;
-  min-width: 768px;
+width: 1200px;
   margin: 0 auto;
   background: #fff;
   box-shadow: 0 -5px 15px 0 rgba(0, 0, 0, .2);
@@ -74,7 +73,6 @@ h3 {
 .main-navigation li {
   display: inline-block;
   vertical-align: top;
-  width: 20%;
   font-weight: bold
 }
 
@@ -90,10 +88,12 @@ h3 {
 }
 
 .left {
+  width: 240px;
   float: left;
 }
 
 .right {
+  width: 237px;
   float: right;
 }
 
@@ -200,6 +200,7 @@ h3 {
 .main-line-first {
   margin-bottom: 60px;
   text-align: center;
+  background-color: #81b3d2;
 }
 
 .town {
@@ -212,22 +213,25 @@ h3 {
 
 .town h3 {
   width: 120px;
-  padding-top: 46px;
+  padding-top: 40px;
   margin: 10px auto;
   color: #fff;
   font-size: 21px;
-  line-height: 21px;
+  line-height: 26px;
   font-weight: bold;
   text-align: center;
 }
 
 .town p {
+  margin: 17px auto;
   width: 300px;
-  margin: 22px auto;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .town span {
-  margin-top: 35px;
+  display: block;
+  margin-top: 15px;
 }
 
 .town-image {
@@ -269,8 +273,8 @@ h3 {
 
 .main-line-third {
   text-align: center;
+  background-color: #81b3d2;
 }
-
 .town-two {
   float: right;
   width: 400px;
@@ -281,19 +285,24 @@ h3 {
 
 .town-two h3 {
   width: 200px;
-  padding-top: 50px;
+  padding-top: 40px;
   margin: 10px auto;
   color: #fff;
   font-size: 21px;
-  line-height: 21px;
+  line-height: 26px;
   font-weight: bold;
 }
 
 .town-two p {
-  padding-left: 25px;
-  width: 350px;
+  padding-top: 5px;
+  padding-left: 35px;
+  width: 330px;
   font-size: 14px;
   line-height: 21px;
+}
+.town-two span{
+  display: block;
+  margin-top: 15px;
 }
 
 .town-image-two {
@@ -308,18 +317,29 @@ h3 {
 .advantages {
   float: left;
   width: 400px;
-  min-height: 260px;
+height: 255px;
   text-align: center;
   background-color: #eeeeee;
-  margin-bottom: 54px;
+  margin-bottom: 57px;
 }
 
 .advantages h3 {
+  width: 120px;
+  margin: 0 auto;
   padding-top: 45px;
   font-size: 21px;
   line-height: 21px;
 }
-
+.advantages p{
+  width: 270px;
+  padding-left: 65px;
+  font-size: 14px;
+  line-height: 21px;
+}
+.advantages span{
+  display: block;
+  margin-top: 25px;
+}
 
 /* Пятая полоса */
 
@@ -331,11 +351,14 @@ h3 {
 }
 
 .promo h2 {
+  margin-bottom: 30px;
   font-size: 30px;
   line-height: 24px;
 }
 .promo p{
-  margin-bottom: 45px;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 46px;
 }
 
 .map iframe {
@@ -607,10 +630,11 @@ legend {
 /*-- Отображение отелей--*/
 
 .hotel {
+  padding-top: 30px;
+  padding-bottom: 30px;
   padding-left: 72px;
   padding-right: 70px;
   width: 1055px;
-  height: 141px;
   display: inline-block;
   list-style: none;
   border-bottom: 1px solid #e5e5e5;
@@ -622,19 +646,16 @@ legend {
 }
 
 .photo-h {
-  padding-top: 30px;
   width: 135px;
   height: 90px;
   float: left;
 }
 
 .hotel-description {
-  margin-top: 30px;
   margin-left: 30px;
   width: 300px;
   float: left;
 }
-
 .htl {
   padding-top: 28px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -699,7 +720,6 @@ legend {
 
 .hotel-rating {
   display: inline-block;
-  margin-top: 93px;
   width: 108px;
   height: 27px;
   line-height: 27px;
@@ -944,7 +964,7 @@ padding-right: 5px;
 
 .checkbox-item {
   padding-top: 12px;
-  padding-bottom: 12px;
+  padding-bottom: 9px;
 }
 
 .options fieldset {
@@ -956,7 +976,7 @@ padding-right: 5px;
   color: #ffffff;
   font-size: 16px;
   line-height: 21px;
-  font-weight: 700;
+  font-weight: 600;
   margin-left: -41px;
 }
 
@@ -1001,7 +1021,7 @@ padding-right: 5px;
 .options {
   width: 225px;
   float: left;
-  padding-top: 28px;
+  padding-top: 30px;
   padding-left: 30px;
 }
 
