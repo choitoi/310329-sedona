@@ -15,7 +15,7 @@ body {
   text-transform: uppercase;
 }
 
-h2 {
+.big-header {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 30px;
@@ -24,7 +24,7 @@ h2 {
   text-transform: uppercase;
 }
 
-h3 {
+.small-header {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 21px;
@@ -181,7 +181,7 @@ width: 1200px;
 }
 
 .tagline-title {
-  width: 450px;
+  width: 500px;
   margin: 28px auto;
   font-size: 21px;
   line-height: 26px;
@@ -250,11 +250,30 @@ width: 1200px;
   margin-bottom: 83px;
 }
 
-.features-icon {
+.features-icon-house {
   width: 75px;
   height: 75px;
   margin-right: auto;
   margin-left: auto;
+  background-image: url("../img/features-icons-sprite.png");
+  background-position: -79px -85px;
+}
+.features-icon-burger {
+  width: 75px;
+  height: 75px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url("../img/features-icons-sprite.png");
+  background-position: -79px -5px;
+
+}
+.features-icon-box {
+  width: 64px;
+  height: 76px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url("../img/features-icons-sprite.png");
+  background-position: -5px -5px
 }
 
 .features-list-item h3 {
@@ -367,6 +386,11 @@ height: 255px;
   width: 1200px;
   height: 583px;
   border: none;
+}
+.map{
+  background-image: url("../img/map.jpg");
+  width: 1200px;
+  height: 583px;
 }
 
 
@@ -499,7 +523,7 @@ height: 255px;
   background-color: #4279a2;
 }
 
-fieldset {
+.form-search-hotel fieldset {
   display: inline-block;
   width: 250px;
 }
@@ -509,16 +533,16 @@ fieldset {
   float: right;
 }
 
-input {
+.form-search-hotel input {
   display: block;
 }
 
-label {
+.form-search-hotel label {
   display: inline;
   font-size: 14px;
 }
 
-legend {
+.form-search-hotel legend {
   font-size: 14px;
 }
 
@@ -581,13 +605,15 @@ legend {
   text-decoration: none;
   list-style: none;
 }
-
+.active-arrow{
+  background-image: url("../img/down.png");
+  background-repeat: no-repeat;
+}
 .arrow-down {
   margin-top: 38px;
   float: right;
   width: 11px;
   height: 10px;
-  background-image: url("../img/sgd.png");
   background-repeat: no-repeat;
 }
 
@@ -639,6 +665,7 @@ legend {
   width: 1055px;
   display: inline-block;
   list-style: none;
+  vertical-align: middle;
   border-bottom: 1px solid #e5e5e5;
   position: relative;
 }
@@ -658,7 +685,7 @@ legend {
   width: 600px;
   float: left;
 }
-.htl {
+.hotel-name-link {
   padding-top: 28px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
@@ -669,57 +696,57 @@ legend {
   text-transform: uppercase;
 }
 
-.htl:hover {
+.hotel-name-link:hover {
   color: #81b3d2;
 }
 
-.htl:active {
+.hotel-name-link:active {
   color: #cacaca;
 }
 
 .stars {
 }
 
-.one:before {
+.four-stars:before {
   content: '';
-  width: 71px;
+  width: 85px;
   display: block;
   height: 16px;
   float: right;
   right: 75px;
-  margin-top: 30px;
   position: absolute;
   background-repeat: repeat-x;
   background-image: url("../img/star.png");
 }
 
-.two:before {
+.three-stars:before {
   content: '';
-  width: 52px;
+  width: 63px;
   display: block;
   height: 16px;
   float: right;
   right: 75px;
-  margin-top: 30px;
   position: absolute;
   background-repeat: repeat-x;
   background-image: url("../img/star.png");
 }
 
-.three:before {
+.two-stars:before {
   content: '';
-  width: 36px;
+  width: 41px;
   display: block;
   height: 16px;
   float: right;
   right: 75px;
-  margin-top: 30px;
   position: absolute;
   background-repeat: repeat-x;
   background-image: url("../img/star.png");
 }
 
 .hotel-rating {
+  margin-left: 180px;
+  margin-top: 62px;
+  margin-bottom: 0;
   display: inline-block;
   width: 108px;
   height: 27px;
@@ -729,8 +756,9 @@ legend {
   background-color: #f2f2f2;
 }
 
-.hp p {
+.hotel-price p {
   display: inline-block;
+  vertical-align: middle;
   padding-right: 30px;
   line-height: 1px;
   width: 110px;
@@ -738,7 +766,7 @@ legend {
   margin-right: 5px;
 }
 
-.hp {
+.hotel-price {
   margin-bottom: 8px;
 }
 
@@ -1018,15 +1046,12 @@ padding-right: 5px;
   height: 22px;
   background-image: url("../img/checkbox-checked.png");
 }
-
 .options {
   width: 225px;
   float: left;
   padding-top: 30px;
   padding-left: 30px;
 }
-
-
 /*-----------------------------------------------------------------------------------------------------*/
 
 

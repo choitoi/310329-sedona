@@ -6,7 +6,7 @@
   <title>HTML Academy: Седона выбор отеля</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="ineer">
@@ -39,8 +39,8 @@
                   <label for="chb-1">Бассейн</label>
                   <li>
                     <li class="checkbox-item">
-                      <input type="checkbox" id="chb-2" name="feature-2">
-                      <label for="chb-2">Парковка</label>
+                      <input type="checkbox" id="chb-2" name="feature-2" disabled="">
+                      <label for="chb-2" disabled="">Парковка</label>
                     </li>
                     <li class="checkbox-item">
                       <input type="checkbox" id="chb-3" name="feature-3">
@@ -89,65 +89,65 @@
       </div>
       <!-- Conclusion result -->
       <div class="conclusion-result-line">
-        <h3>Найдено: 3</h3>
+        <h3 class="small-header">Найдено: 3</h3>
         <span>Сортировка:</span>
         <ul>
           <li><a href="#" class="active-in">По цене</a></li>
           <li><a href="#" class="dot">По типу</a></li>
           <li><a href="#" class="dot">По рейтингу</a></li>
         </ul>
-        <a class="arrow-down" href="#"></a>
+        <a class="arrow-down active-arrow" href="#"></a>
         <a class="arrow-up" href="#"></a>
       </div>
       <!-- Hotel selection -->
-      <section class="hotel clearfix border-top one">
+      <section class="hotel clearfix border-top ">
         <div class="photo-h">
           <img src="img/hotel-amara.jpg" alt="photo 1 hotel" width="135" height="90">
         </div>
         <div class="hotel-description">
-          <a class="htl" href="#">Amara Resort & Spa</a>
-          <div class="hp">
+          <a class="hotel-name-link" href="#">Amara Resort & Spa</a>
+          <div class="hotel-price">
             <p>Гостиница</p>
             <p>от 4000 Р.</p>
           </div>
           <a class="btn btn-more" href="#">Подробнее</a>
           <a class="btn btn-res" href="#">Забронировать</a>
         </div>
-        <div class="stars">
+        <div class="stars four-stars">
           <p class="hotel-rating">Рейтинг:8,5</p>
         </div>
       </section>
-      <section class="hotel clearfix two">
+      <section class="hotel clearfix ">
         <div class="photo-h">
           <img src="img/hotel-desert.jpg" alt="photo 1 hotel" width="135" height="90">
         </div>
         <div class="hotel-description">
-          <a class="htl" href="#">Desert Qualinn</a>
-          <div class="hp">
+          <a class="hotel-name-link" href="#">Desert Qualinn</a>
+          <div class="hotel-price">
             <p>Мотель</p>
             <p>от 3000 Р.</p>
           </div>
           <a class="btn btn-more" href="#">Подробнее</a>
           <a class="btn btn-res" href="#">Забронировать</a>
         </div>
-        <div class="stars">
+        <div class="stars three-stars">
           <p class="hotel-rating">Рейтинг:8,9</p>
         </div>
       </section>
-      <section class="hotel clearfix three">
+      <section class="hotel clearfix ">
         <div class="photo-h">
           <img src="img/hotel-vilaas.jpg" alt="photo 1 hotel" width="135" height="90">
         </div>
         <div class="hotel-description">
-          <a class="htl" href="#">Villas  At  Poco  Diablo</a>
-          <div class="hp">
+          <a class="hotel-name-link" href="#">Villas  At  Poco  Diablo</a>
+          <div class="hotel-price">
             <p>Апартаменты</p>
             <p>от 2000 Р.</p>
           </div>
           <a class="btn btn-more" href="#">Подробнее</a>
           <a class="btn btn-res" href="#">Забронировать</a>
         </div>
-        <div class="stars">
+        <div class="stars two-stars">
           <p class="hotel-rating">Рейтинг:9,2</p>
         </div>
       </section>
