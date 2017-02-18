@@ -1036,15 +1036,29 @@ padding-right: 5px;
   height: 22px;
   background-image: url("../img/checkbox.png");
 }
+.checkbox-item input[type=checkbox]:disabled ~ label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -41px;
+  z-index: 1;
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/discheckbox.png");
+}
 
 .checkbox-item input[type="checkbox"] {
   display: none
 }
-
 .checkbox-item input[type="checkbox"]:checked~label::before {
   width: 26px;
   height: 22px;
   background-image: url("../img/checkbox-checked.png");
+}
+.checkbox-item input[type=checkbox]:disabled:checked~label::before{
+  width: 26px;
+  height: 22px;
+  background-image: url("../img/dischecked.png");
 }
 .options {
   width: 225px;
