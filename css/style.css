@@ -210,29 +210,23 @@ width: 1200px;
   text-align: center;
   margin-bottom: 83px;
 }
-.features-icon-house {
-  width: 75px;
-  height: 75px;
-  margin-right: auto;
-  margin-left: auto;
-  background-image: url("../img/features-icons-sprite.png");
-  background-position: -79px -85px;
+.house {
+  padding-top: 75px;
+  background-position: top;
+  background-image: url("../img/house.png");
+  background-repeat: no-repeat;
 }
-.features-icon-burger {
-  width: 75px;
-  height: 75px;
-  margin-right: auto;
-  margin-left: auto;
-  background-image: url("../img/features-icons-sprite.png");
-  background-position: -79px -5px;
+.burger {
+  background-position: top;
+  padding-top: 75px;
+  background-image: url("../img/burger.png");
+  background-repeat: no-repeat;
 }
-.features-icon-box {
-  width: 64px;
-  height: 76px;
-  margin-right: auto;
-  margin-left: auto;
-  background-image: url("../img/features-icons-sprite.png");
-  background-position: -5px -5px
+.box {
+  background-position:top;
+  padding-top: 75px;
+  background-image: url("../img/box.png");
+  background-repeat: no-repeat;
 }
 .features-list-item h3 {
   font-size: 21px;
@@ -249,6 +243,10 @@ width: 1200px;
 .main-line-third {
   text-align: center;
   background-color: #81b3d2;
+}
+.main-line-fourth{
+  margin-bottom: 57px;
+  background-color: #eeeeee;
 }
 .town-two {
   float: right;
@@ -286,10 +284,9 @@ width: 1200px;
 .advantages {
   float: left;
   width: 400px;
-height: 255px;
+  height: 255px;
   text-align: center;
   background-color: #eeeeee;
-  margin-bottom: 57px;
 }
 .advantages h3 {
   width: 120px;
@@ -327,13 +324,13 @@ height: 255px;
 }
 .map iframe {
   width: 1200px;
-  height: 583px;
+  height: 593px;
   border: none;
 }
 .map{
   background-image: url("../img/map.jpg");
   width: 1200px;
-  height: 583px;
+  height: 593px;
 }
 /*-----------------------------------------------------------------------------------------------------*/
 
@@ -343,7 +340,7 @@ height: 255px;
 
 /*-----------------------------------------------------------------------------------------------------*/
 .main-footer {
-  height: 120px;
+  min-height: 120px;
   text-align: center;
   background-color: rgba(255,255,255, 0.9);
   position: absolute;
@@ -354,7 +351,7 @@ height: 255px;
   position: static;
 }
 .social-btn {
-  margin-right: 2px;
+  margin-right: 5px;
   margin-top: 37px;
   display: inline-block;
   width: 46px;
@@ -399,6 +396,7 @@ height: 255px;
   margin-top: 47px;
 }
 .footer-social {
+  font-size: 0px;
   float: left;
   width: 400px;
   text-align: center;
@@ -446,7 +444,6 @@ height: 255px;
 }
 .form-search-hotel fieldset {
   display: inline-block;
-  width: 250px;
 }
 .rightcoast {
   width: 250px;
@@ -921,8 +918,8 @@ padding-right: 5px;
   padding-left: 55px;
   padding-right: 55px;
   padding-top: 55px;
+  padding-bottom: 55px;
   width: 568px;
-  height: 395px;
   font-size: 14px;
   font-weight: bold;
   background-color: #ffffff;
@@ -957,6 +954,12 @@ padding-right: 5px;
   padding: 11px 0 10px 11px;
   background-color: #f2f2f2;
   border: none;
+}
+.date-exit-block{
+  position: relative;
+}
+.date-come-block{
+  position:relative;
 }
 .form-search label:nth-of-type(2) {
   float: left;
@@ -1034,36 +1037,36 @@ padding-right: 5px;
   background-color: #f2f2f2;
   box-sizing: border-box;
 }
-.icon-calendar:nth-of-type(1) {
+.icon-calendar-come {
   position: absolute;
   display: block;
-  right: 65px;
-  top: 63px;
+  right: 9px;
+  top: 8px;
   width: 21px;
   height: 22px;
   background-image: url("../img/calendar.png");
   background-repeat: no-repeat;
 }
-.icon-calendar:nth-of-type(1):hover {
+.icon-calendar-exit {
+  position: absolute;
+  display: block;
+  right: 9px;
+  top: 75px;
+  width: 21px;
+  height: 22px;
+  background-image: url("../img/calendar.png");
+  background-repeat: no-repeat;
+}
+.icon-calendar-come:hover {
   background-image: url("../img/calendarb.png");
 }
-.icon-calendar:nth-of-type(1):active {
+.icon-calendar-come:active {
   background-image: url("../img/calendara.png");
 }
-.icon-calendar:nth-of-type(2) {
-  position: absolute;
-  display: block;
-  right: 65px;
-  top: 133px;
-  width: 21px;
-  height: 22px;
-  background-image: url("../img/calendar.png");
-  background-repeat: no-repeat;
-}
-.icon-calendar:nth-of-type(2):hover {
+.icon-calendar-exit:hover {
   background-image: url("../img/calendarb.png");
 }
-.icon-calendar:nth-of-type(2):active {
+.icon-calendar-exit:active {
   background-image: url("../img/calendara.png");
 }
 .box-input-number-grown-up button:nth-of-type(1), .box-input-number-grown-up button:nth-of-type(2), .box-input-number-child button:nth-of-type(1), .box-input-number-child button:nth-of-type(2) {

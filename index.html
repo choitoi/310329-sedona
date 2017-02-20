@@ -15,7 +15,7 @@
     <header class="main-header clearfix">
       <nav class="main-navigation">
         <ul class="clearfix">
-          <li><a class="#" href="#">Информация</a></li>
+          <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и Видео</a></li>
           <li><a href="#">Карта штата</a></li>
           <li><a href="ineer.html">Гостиницы</a></li>
@@ -44,26 +44,20 @@
         </div>
       </div>
       <div class="features-list clearfix">
-        <div class="features-list-item">
-          <div class="features-icon-house">
-          </div>
+        <div class="features-list-item house">
           <h3 class="small-header">Жилье</h3>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
-        <div class="features-list-item">
-          <div class="features-icon-burger">
-          </div>
+        <div class="features-list-item burger">
           <h3 class="small-header">Еда</h3>
           <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
-        <div class="features-list-item">
-          <div class="features-icon-box">
-          </div>
+        <div class="features-list-item box">
           <h3 class="small-header">Cувениры</h3>
-          <p>Не только Китайского, но и местного производства</p>
+          <p>Не только Китайского, но и местного производства!</p>
         </div>
       </div>
-      <div class="main-line-third">
+      <div class="main-line-third clearfix">
         <div class="town-image-two">
           <img src="img/bg-2.jpg" alt="devil bridge photo" width="800" height="260">
         </div>
@@ -73,7 +67,7 @@
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь.</p>
         </div>
       </div>
-      <div class="main-line-fourth ">
+      <div class="main-line-fourth clearfix">
         <div class="advantages">
           <h3 class="small-header">Небольшая площадь</h3>
           <span>&mdash; №3 &mdash;</span>
@@ -98,12 +92,15 @@
       <div class="form-search">
         <form class="clearfix" action="booking-hotel.php" method="post">
           <label for="date-come">Дата заезда:</label>
-          <input class="input-date-come" id="date-come" type="text" name="date come" placeholder="24 АПРЕЛЯ 2017">
-          <span class="icon-calendar"></span>
-
+          <div class="date-come-block">
+            <input class="input-date-come" id="date-come" type="text" name="date come" placeholder="24 АПРЕЛЯ 2017">
+            <span class="icon-calendar-come"></span>
+          </div>
           <label for="date-exit">Дата выезда:</label>
-          <input class="input-date-exit" id="date-exit" type="text" name="date exit" placeholder="4 ИЮНЯ 2017">
-          <span class="icon-calendar"></span>
+          <div class="date-exit-block">
+            <input class="input-date-exit" id="date-exit" type="text" name="date exit" placeholder="4 ИЮНЯ 2017">
+            <span class="icon-calendar-exit"></span>
+          </div>
           <label for="grown-up">Взрослые:</label>
           <div class="box-input-number-grown-up">
             <button type="button">&#8722;</button>
